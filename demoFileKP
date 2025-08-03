@@ -9,7 +9,7 @@ tools
         stage('Checkout') {
             steps {
                 // Checkout your source code from version control
-                git 'https://github.com/hiteshupes/GFG-32-BATCH-MAVEN.git'
+                git 'https://github.com/Kaviprabha/GFG-32-BATCH-MAVEN.git'
             }
         }
         stage('Build') {
