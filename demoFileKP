@@ -1,5 +1,6 @@
 pipeline {
     agent any
+
 tools
 {
 	maven 'MAVEN_HOME'
@@ -8,7 +9,7 @@ tools
         stage('Checkout') {
             steps {
                 // Checkout your source code from version control
-                git 'https://github.com/Kaviprabha/GFG-32-BATCH-MAVEN.git'
+                git 'https://github.com/hiteshupes/GFG-32-BATCH-MAVEN.git'
             }
         }
         stage('Build') {
@@ -22,13 +23,7 @@ tools
                 // Run tests if applicable
                 sh 'mvn test'
             }
-        }
-        stage('Deploy') {
-            steps {
-                // Deploy your artifact, if necessary
-                // Example: sh 'mvn deploy'
-            }
-        }
+        }        
     }
     
 
